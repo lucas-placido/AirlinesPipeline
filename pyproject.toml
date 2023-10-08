@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "airlines"
+version = "0.1.0"
+description = ""
+authors = ["Lucas Plácido <lucas.cplacido@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+psycopg2 = "^2.9.9"
+pandas = "^2.1.1"
+ipykernel = "^6.25.2"
+apache-airflow = "^2.7.1"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
