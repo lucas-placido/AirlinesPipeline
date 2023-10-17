@@ -1,8 +1,8 @@
 Download dataset:
 <link> https://postgrespro.com/community/demodb
 
-Steps:
-    1. Banco de dados no docker
+# Setup:
+    * Banco de dados no docker
         <!-- Criação da imagem do postgres -->
         * docker pull postgres:16.0
         * docker build -t my-postgres-db .
@@ -15,7 +15,15 @@ Steps:
         * docker exec -it postgresdb bash
         <!-- Usar para verificar os parametros de conexao para conexão do dbeaver -->
         * docker inspect postgresdb
-    2. Extração de dados com airflow
-    3. Transformação de dados com pandas
-    4. Prefect fazendo orquestração
-    5. PowerBI consumindo os dados
+    * Extração de dados com airflow
+        Setup:            
+            .env
+            docker-compose up airflow-init
+            docker-compose up
+        Steps:
+            1. Salvar o conteudo da query no docker
+            2. Criar um volume do docker com minha maquina local            
+    * Transformação de dados com pandas
+      1. Separar os dados em fatos (valores) e dimensões 
+      2. Refazer a transformação usando o dbt como transformador
+    * PowerBI consumindo os dados

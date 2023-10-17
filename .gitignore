@@ -1,3 +1,5 @@
 demo-big-en
-/airlines/ETL/Data/E/*
-/airlines/ETL/Data/T/*
+src/airlines/Data/*
+src/airflow/logs/*
+dash.pbix
+jupyter.ipynb

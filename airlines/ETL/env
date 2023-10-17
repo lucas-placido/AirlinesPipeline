@@ -1,2 +1,0 @@
-setx extract_path "C:/Lucas/Python/Airlines/airlines/ETL/Data/E/"
-setx transform_path "C:/Lucas/Python/Airlines/airlines/ETL/Data/T/"
